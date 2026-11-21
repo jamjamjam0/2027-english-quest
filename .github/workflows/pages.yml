@@ -23,8 +23,6 @@ jobs:
     steps:
       - name: Check out source
         uses: actions/checkout@v6
-      - name: Unpack static site assets
-        run: unzip -q site-pages.zip -d site
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload static site
